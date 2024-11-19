@@ -6,7 +6,7 @@ echo "UPDATING..."
 apt update
 
 echo "INSTALLING"
-apt install gcc g++ git -y
+apt install gcc g++ git fzf -y
 curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.gz
 git clone https://github.com/to23mas/.nvim.git
 rm -rf /opt/nvim
