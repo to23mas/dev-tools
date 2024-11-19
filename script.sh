@@ -14,7 +14,7 @@ tar -C /opt -xzf nvim-linux64.tar.gz
 export PATH="$PATH:/opt/nvim-linux64/bin"
 
 echo "Setting up aliases"
-curl -o "$TEMP_ALIASES_FILE" https://raw.githubusercontent.com/to23mas/.aliases/refs/heads/home/personal
+curl -o "$TEMP_ALIASES_FILE" https://raw.githubusercontent.com/to23mas/dev-tools/refs/heads/main/aliases
 source "$TEMP_ALIASES_FILE"
 
 echo "Setting up neovim"

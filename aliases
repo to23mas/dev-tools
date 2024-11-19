@@ -1,3 +1,21 @@
+#navigation
 alias ll='ls -l'
 alias la='ls -al'
-alias cdf='cd (fdfind --type directory | fzf)'
+alias cdf='cd $(fdfind --type directory | fzf)'
+
+#launchers
+alias n='nvim .'
+
+# docker
+alias dpr='sudo docker system prune -a -f ; sudo docker volume prune'
+alias drm='docker stop (docker ps -aq) ; docker rm (docker ps -aq)'
+alias dc='docker compose'
+alias drud='drm && dcud'
+alias de='docker exec -it'
+alias dep='docker exec -it postgres bash'
+alias def='docker exec -it fpm bash'
+alias dcu='docker compose up'
+alias dcud='docker compose up -d'
+alias dcut='docker compose -f docker-compose.yml -f docker-compose.test.yml up -d'
+alias dps='docker ps -a'
+alias dl='docker logs -f'
