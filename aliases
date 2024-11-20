@@ -4,6 +4,8 @@
 alias ll='ls -l'
 alias la='ls -al'
 alias cdf='cd $(fdfind --type directory | fzf)'
+alias c='export CI_REGISTRY=registry.gitlab.logmanager.cz'
+alias load_environment='. /platform/conf/load_environment'
 
 #launchers
 alias n='nvim .'
